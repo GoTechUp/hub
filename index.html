@@ -16,6 +16,8 @@
             </div>
         </div>
     </header>
+
+
 <script>
     if (sessionStorage.getItem("loggedIn") !== "true") {
         window.location.href = "login.html"; // Redirect to login if not logged in
@@ -23,7 +25,15 @@
         const username = sessionStorage.getItem("username");
         alert("Welcome back, " + username); // Display username after successful login
     }
+
+    // Logout functionality
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+        sessionStorage.removeItem("loggedIn");
+        sessionStorage.removeItem("username");
+        window.location.href = "login.html"; // Redirect to login page after logout
+    });
 </script>
+    <button id="logoutBtn">Logout</button>
     <!-- Glossaries Section -->
     <section class="py-8 bg-gray-100">
         <div class="container mx-auto px-4">
