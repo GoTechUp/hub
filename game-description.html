@@ -6,7 +6,24 @@
     <title>Game Description - GoTechUp Junior</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-    <script>
+   
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">GoTechUp Junior</h1>
+            <nav>
+                <ul class="flex space-x-4 text-sm">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Features</a></li>
+                    <li><a href="#" class="hover:underline">Market</a></li>
+                    <li><a href="#" class="hover:underline">Localization</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <script>
 document.addEventListener("DOMContentLoaded", function() {
     const logoutBtn = document.getElementById("logoutBtn");
 
@@ -33,23 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     <button id="logoutBtn" class="absolute right-2 top-2 bg-black-600 text-white px-4 py-2 rounded-lg hover:bg-black-500 focus:ring-2 focus:ring-grey-400">Logout</button>
-<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
-
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-4 shadow-md">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">GoTechUp Junior</h1>
-            <nav>
-                <ul class="flex space-x-4 text-sm">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">Features</a></li>
-                    <li><a href="#" class="hover:underline">Market</a></li>
-                    <li><a href="#" class="hover:underline">Localization</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <!-- Main Content -->
     <main class="flex-grow container mx-auto px-4 py-8">
         <!-- Overview Section -->
