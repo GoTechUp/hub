@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (confirmLogout) {
             sessionStorage.removeItem("loggedIn");
             sessionStorage.removeItem("username");
-            location.reload(); // Refresh the page after logout
+            window.location.href = "login.html";  // Refresh the page after logout
         }
     });
 });
