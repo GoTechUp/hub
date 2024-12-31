@@ -19,27 +19,32 @@
 
 
 <script>
-if (sessionStorage.getItem("loggedIn") === "true") {
-    const username = sessionStorage.getItem("username");
-    alert("Welcome back, " + username); // Display welcome alert
-    document.getElementById("logoutBtn").style.display = "inline"; // Show the logout button
-} else {
-    window.location.href = "login.html"; // Redirect to login if not logged in
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const logoutBtn = document.getElementById("logoutBtn");
 
-// Logout functionality with confirmation
-document.getElementById("logoutBtn").addEventListener("click", function() {
-    const confirmLogout = confirm("Are you sure you want to log out?");
-    if (confirmLogout) {
-        sessionStorage.removeItem("loggedIn");
-        sessionStorage.removeItem("username");
-        window.location.href = "login.html"; // Redirect to login after logout
+    // Check if the user is logged in
+    if (sessionStorage.getItem("loggedIn") === "true") {
+        const username = sessionStorage.getItem("username");
+        alert("Welcome back, " + username); // Display welcome alert
+        logoutBtn.style.display = "inline"; // Show the logout button
+    } else {
+        logoutBtn.style.display = "none"; // Hide the logout button
     }
-});
 
+    // Add logout functionality with confirmation
+    logoutBtn.addEventListener("click", function() {
+        const confirmLogout = confirm("Are you sure you want to log out?");
+        if (confirmLogout) {
+            sessionStorage.removeItem("loggedIn");
+            sessionStorage.removeItem("username");
+            location.reload(); // Refresh the page after logout
+        }
+    });
+});
 </script>
 
-    <button id="logoutBtn" class="absolute right-2 top-2 bg-black-600 text-white px-4 py-2 rounded-lg hover:bg-black-500 focus:ring-2 focus:ring-grey-400" style="display: none;">Logout</button>
+
+    <button id="logoutBtn" class="absolute right-2 top-2 bg-black-600 text-white px-4 py-2 rounded-lg hover:bg-black-500 focus:ring-2 focus:ring-grey-400">Logout</button>
     <!-- Glossaries Section -->
     <section class="py-8 bg-gray-100">
         <div class="container mx-auto px-4">
