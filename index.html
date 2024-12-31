@@ -19,23 +19,24 @@
 
 
 <script>
-    if (sessionStorage.getItem("loggedIn") !== "true") {
-        window.location.href = "login.html"; // Redirect to login if not logged in
-    } else {
-        const username = sessionStorage.getItem("username");
-        alert("Welcome back, " + username); // Display username after successful login
-        document.getElementById("logoutBtn").style.display = "inline"; // Show logout button
-    }
+if (sessionStorage.getItem("loggedIn") === "true") {
+    const username = sessionStorage.getItem("username");
+    alert("Welcome back, " + username); // Display welcome alert
+    document.getElementById("logoutBtn").style.display = "inline"; // Show the logout button
+} else {
+    window.location.href = "login.html"; // Redirect to login if not logged in
+}
 
-    // Logout functionality with confirmation
-    document.getElementById("logoutBtn").addEventListener("click", function() {
-        const confirmLogout = confirm("Are you sure you want to log out?");
-        if (confirmLogout) {
-            sessionStorage.removeItem("loggedIn");
-            sessionStorage.removeItem("username");
-            window.location.href = "login.html"; // Redirect to login page after logout
-        }
-    });
+// Logout functionality with confirmation
+document.getElementById("logoutBtn").addEventListener("click", function() {
+    const confirmLogout = confirm("Are you sure you want to log out?");
+    if (confirmLogout) {
+        sessionStorage.removeItem("loggedIn");
+        sessionStorage.removeItem("username");
+        window.location.href = "login.html"; // Redirect to login after logout
+    }
+});
+
 </script>
 
     <button id="logoutBtn" class="absolute right-2 top-2 bg-black-600 text-white px-4 py-2 rounded-lg hover:bg-black-500 focus:ring-2 focus:ring-grey-400" style="display: none;">Logout</button>
