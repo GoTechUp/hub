@@ -16,7 +16,14 @@
             </div>
         </div>
     </header>
-
+<script>
+    if (sessionStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html"; // Redirect to login if not logged in
+    } else {
+        const username = sessionStorage.getItem("username");
+        alert("Welcome back, " + username);
+    }
+</script>
     <!-- Glossaries Section -->
     <section class="py-8 bg-gray-100">
         <div class="container mx-auto px-4">
