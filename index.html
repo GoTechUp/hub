@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Welcome back, " + username); // Display welcome alert
         logoutBtn.style.display = "inline"; // Show the logout button
     } else {
+        window.location.href = "login.html";
         logoutBtn.style.display = "none"; // Hide the logout button
     }
-
     // Add logout functionality with confirmation
     logoutBtn.addEventListener("click", function() {
         const confirmLogout = confirm("Are you sure you want to log out?");
