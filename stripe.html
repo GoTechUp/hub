@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Payment Flow - WooCommerce Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Header (Unchanged as per your request) -->
+    <header class="bg-blue-600 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-extrabold">KnowledgeHub</h1>
+                <p class="text-sm mt-1">Your Go-To Resource for Learning and Insights</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stripe Payment Flow Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Integrating Stripe with WooCommerce for International Transactions</h2>
+            <p class="text-gray-600 text-lg mb-6">
+                Stripe is a widely used payment gateway that allows businesses to securely accept online payments from customers worldwide. Integrating Stripe with WooCommerce enables you to process payments in multiple currencies, making it an excellent choice for international transactions. Follow the steps below to set up Stripe with your WooCommerce store.
+            </p>
+            
+            <!-- Step 1: Install the Stripe Plugin -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition border-2 border-gray-300">
+                <h3 class="text-xl font-bold text-gray-800">Step 1: Install the Stripe Plugin</h3>
+                <p class="text-gray-600 mt-2">
+                    The first step is to install the official WooCommerce Stripe Payment Gateway plugin:
+                </p>
+                <ol class="list-decimal ml-6 text-gray-600">
+                    <li>Go to your WordPress admin panel.</li>
+                    <li>Navigate to Plugins > Add New.</li>
+                    <li>Search for "WooCommerce Stripe Payment Gateway".</li>
+                    <li>Click "Install Now" and then "Activate".</li>
+                </ol>
+            </div>
+
+            <!-- Step 2: Set Up Stripe API Keys -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition border-2 border-gray-300">
+                <h3 class="text-xl font-bold text-gray-800">Step 2: Set Up Your Stripe API Keys</h3>
+                <p class="text-gray-600 mt-2">
+                    Once the plugin is activated, configure your Stripe API keys to allow your WooCommerce store to communicate with Stripe:
+                </p>
+                <ol class="list-decimal ml-6 text-gray-600">
+                    <li>Go to WooCommerce > Settings > Payments.</li>
+                    <li>Click on "Stripe" and then "Manage".</li>
+                    <li>Sign in to your Stripe account (or create one if you don’t have an account).</li>
+                    <li>From your Stripe Dashboard, copy your API keys (Publishable and Secret keys).</li>
+                    <li>Paste the keys into the corresponding fields in WooCommerce.</li>
+                </ol>
+            </div>
+
+            <!-- Step 3: Enable International Transactions -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition border-2 border-gray-300">
+                <h3 class="text-xl font-bold text-gray-800">Step 3: Enable International Transactions</h3>
+                <p class="text-gray-600 mt-2">
+                    Stripe allows you to accept payments in a variety of currencies. To enable international payments:
+                </p>
+                <ol class="list-decimal ml-6 text-gray-600">
+                    <li>In your Stripe account settings, ensure that your account is configured to accept multiple currencies.</li>
+                    <li>Under the Stripe payment settings in WooCommerce, enable "Currency" and select the currencies you want to accept.</li>
+                    <li>Ensure your WooCommerce store's country settings match the countries you're targeting for international transactions.</li>
+                </ol>
+            </div>
+
+            <!-- Step 4: Test Payment Flow -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6 hover:shadow-lg transition border-2 border-gray-300">
+                <h3 class="text-xl font-bold text-gray-800">Step 4: Test Your Payment Flow</h3>
+                <p class="text-gray-600 mt-2">
+                    Before going live, it's crucial to test your Stripe payment setup to ensure everything works smoothly:
+                </p>
+                <ol class="list-decimal ml-6 text-gray-600">
+                    <li>Enable "Test Mode" in the WooCommerce Stripe settings.</li>
+                    <li>Use Stripe's provided test card numbers to simulate transactions.</li>
+                    <li>Check if payments are processed successfully, including authorization, capture, and refunds.</li>
+                    <li>Once you're confident everything works as expected, switch to "Live Mode" and start accepting payments from international customers.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features of Stripe Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Benefits of Using Stripe with WooCommerce</h2>
+            <ul class="list-inside list-disc text-gray-600">
+                <li>Accept payments from customers worldwide in over 135 currencies.</li>
+                <li>Seamless integration with WooCommerce for a smooth checkout experience.</li>
+                <li>Highly secure, with PCI-compliant infrastructure to protect customer data.</li>
+                <li>Multiple payment methods including credit/debit cards, Apple Pay, Google Pay, and more.</li>
+                <li>Automatic currency conversion, making it easier to handle international payments.</li>
+                <li>Advanced fraud prevention features to safeguard transactions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 KnowledgeHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

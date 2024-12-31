@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Variance Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-extrabold">Timeline Variance Analysis</h1>
+                <p class="text-sm mt-1">Tracking and evaluating project timeline variances</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Timeline Variance Table Section -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Project Timeline Variance Analysis</h2>
+            
+            <!-- Table for Timeline Variance Analysis -->
+            <div class="overflow-x-auto bg-white shadow-md rounded-lg">
+                <table class="min-w-full table-auto">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Project Phase</th>
+                            <th class="py-3 px-4 text-left">Planned Date</th>
+                            <th class="py-3 px-4 text-left">Actual Date</th>
+                            <th class="py-3 px-4 text-left">Variance (Days)</th>
+                            <th class="py-3 px-4 text-left">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr>
+                            <td class="py-3 px-4">Phase 1: Initial Planning</td>
+                            <td class="py-3 px-4">2024-01-01</td>
+                            <td class="py-3 px-4">2024-01-05</td>
+                            <td class="py-3 px-4 text-red-500">+4 Days</td>
+                            <td class="py-3 px-4 text-red-500">Delayed</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Phase 2: Development</td>
+                            <td class="py-3 px-4">2024-02-01</td>
+                            <td class="py-3 px-4">2024-02-01</td>
+                            <td class="py-3 px-4 text-green-500">0 Days</td>
+                            <td class="py-3 px-4 text-green-500">On Time</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Phase 3: Testing</td>
+                            <td class="py-3 px-4">2024-03-01</td>
+                            <td class="py-3 px-4">2024-03-03</td>
+                            <td class="py-3 px-4 text-red-500">+2 Days</td>
+                            <td class="py-3 px-4 text-yellow-500">Minor Delay</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Phase 4: Deployment</td>
+                            <td class="py-3 px-4">2024-04-01</td>
+                            <td class="py-3 px-4">2024-04-02</td>
+                            <td class="py-3 px-4 text-green-500">+1 Day</td>
+                            <td class="py-3 px-4 text-yellow-500">Minor Delay</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Phase 5: Closure</td>
+                            <td class="py-3 px-4">2024-05-01</td>
+                            <td class="py-3 px-4">2024-05-05</td>
+                            <td class="py-3 px-4 text-red-500">+4 Days</td>
+                            <td class="py-3 px-4 text-red-500">Delayed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Button for More Details -->
+            <div class="mt-6 text-right">
+                <a href="more-details.html" class="text-blue-600 hover:underline text-sm">View More Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Knowledge Base. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

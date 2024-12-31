@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Handover</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-extrabold">Game Handover Process</h1>
+                <p class="text-sm mt-1">Guidelines for handing over a Unity game project from developer to client</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Game Handover Section -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Game Handover Process</h2>
+
+            <p class="mb-4 text-gray-700">The game handover process is crucial to ensure a smooth transition from the development phase to the client, especially when using tools like Unity for development and PlasticSCM for version control. This page outlines the steps and documents necessary for a successful handover, including code, assets, and necessary instructions.</p>
+
+            <!-- Handover Checklist -->
+            <div class="bg-white shadow-md rounded-lg p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-4">Handover Checklist</h3>
+                <ul class="list-disc pl-6 text-gray-600">
+                    <li class="mb-2">Ensure that all Unity project files are committed and up-to-date in PlasticSCM.</li>
+                    <li class="mb-2">Check that all assets (textures, models, sounds, etc.) are properly organized and included in the handover.</li>
+                    <li class="mb-2">Verify that all dependencies and third-party libraries (e.g., Unity Asset Store packages) are included or referenced correctly.</li>
+                    <li class="mb-2">Create detailed documentation on the game’s functionality, structure, and mechanics.</li>
+                    <li class="mb-2">Include any necessary credentials, API keys, or services information (e.g., game analytics, cloud storage, etc.).</li>
+                    <li class="mb-2">Ensure the project is free of bugs or issues (if possible) and provide a final testing report.</li>
+                    <li class="mb-2">Set up a version tag in PlasticSCM to mark the final handover version.</li>
+                </ul>
+            </div>
+
+            <!-- Step-by-Step Handover Guide -->
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">Step-by-Step Handover Guide</h3>
+            <div class="space-y-6 text-gray-600">
+                <div>
+                    <h4 class="font-semibold text-lg">1. Unity Project Cleanup</h4>
+                    <p>The Unity project must be cleaned up before the handover. This involves:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Removing unnecessary assets or test scenes.</li>
+                        <li>Ensuring all scenes are saved and properly named.</li>
+                        <li>Verifying that all assets (models, textures, sounds) are correctly linked in the project.</li>
+                        <li>Ensuring there are no missing or broken references.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">2. Version Control via PlasticSCM</h4>
+                    <p>Before handing over the game, ensure the following in PlasticSCM:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Commit all changes, including scripts, scenes, assets, and configurations.</li>
+                        <li>Tag the project with a version label (e.g., "Release_v1.0").</li>
+                        <li>Ensure the repository is fully synchronized and there are no unresolved merge conflicts.</li>
+                        <li>Provide the client with instructions on how to clone or sync the project repository from PlasticSCM.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">3. Game Documentation</h4>
+                    <p>Documentation should cover the following areas:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Overview of the game mechanics and objectives.</li>
+                        <li>Detailed descriptions of each game level and progression.</li>
+                        <li>Control and input settings (e.g., keyboard, mouse, gamepad).</li>
+                        <li>Third-party integrations (e.g., in-app purchases, advertising, social media sharing).</li>
+                        <li>Instructions for any admin panels, APIs, or backend services used in the game.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">4. Final Testing and Quality Assurance</h4>
+                    <p>Before the handover, it is essential to conduct a final round of testing to ensure the following:</p>
+                    <ul class="list-disc pl-6">
+                        <li>The game runs smoothly on all target platforms (PC, Mac, Android, iOS, etc.).</li>
+                        <li>All key features and mechanics are functioning as expected.</li>
+                        <li>There are no major bugs or issues in the game (critical issues should be addressed before handover).</li>
+                        <li>Provide the client with any known issues or areas for improvement, if applicable.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">5. Packaging and Delivery</h4>
+                    <p>After final testing, the game should be packaged and delivered. Steps include:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Building the final version of the game for each platform.</li>
+                        <li>Delivering the final Unity project folder, including all assets, scenes, and scripts.</li>
+                        <li>Providing access to the PlasticSCM repository or sending the final build packages for each platform (e.g., .apk, .exe, .ipa).</li>
+                        <li>Include any additional files needed for deployment (e.g., configuration files, settings, credentials).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg">6. Post-Handover Support</h4>
+                    <p>Provide the client with a support plan that includes:</p>
+                    <ul class="list-disc pl-6">
+                        <li>Bug fixing and minor updates (if applicable).</li>
+                        <li>Instructions for the client to make basic modifications or updates (e.g., changing game settings, adding content).</li>
+                        <li>Contact information for any post-handover issues or emergencies.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conclusion -->
+            <p class="mt-8 text-gray-700">The game handover process is critical for ensuring a successful release and transition from the developer to the client. By following these guidelines, both parties can ensure the game is fully ready for deployment and any future updates or improvements can be efficiently managed.</p>
+
+            <!-- Handover Resources -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Additional Resources</h3>
+                <ul class="list-disc pl-6 text-gray-600">
+                    <li><a href="https://www.plasticscm.com/" class="text-blue-600 hover:underline">PlasticSCM Documentation</a></li>
+                    <li><a href="https://docs.unity.com/" class="text-blue-600 hover:underline">Unity Documentation</a></li>
+                    <li><a href="https://www.gamasutra.com/" class="text-blue-600 hover:underline">Gamasutra - Game Development Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Knowledge Base. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

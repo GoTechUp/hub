@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Knowledge Base</h1>
+            <p class="text-sm">Organized information at your fingertips</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <!-- Title -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold">Sales Flow</h2>
+            <p class="text-gray-600">A clear journey from purchase to onboarding</p>
+        </div>
+
+        <!-- Flowchart Section -->
+        <section class="mb-12 bg-white shadow-sm rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-6">Step-by-Step Sales Flow</h3>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">1</div>
+                    <h4 class="font-bold text-lg">StarterPack GTU Jr</h4>
+                    <p class="text-gray-600 text-sm">Start by choosing the *StarterPack GTU Jr*. Click <b>“Buy Now”</b> to proceed to the purchasing phase.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">2</div>
+                    <h4 class="font-bold text-lg">Payment Gateway</h4>
+                    <p class="text-gray-600 text-sm">Secure your purchase through <a class="text-blue-600 hover:underline" href="stripe.html"> Stripe</a>, entering bank details and finalizing payment. The cart ensures an easy experience.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">3</div>
+                    <h4 class="font-bold text-lg">Customer Onboarding</h4>
+                    <p class="text-gray-600 text-sm">Receive onboarding emails with your receipt, setup instructions, and an <a href="id-allocation.html" class="text-blue-600 hover:underline">auto-generated ID</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Description -->
+        <section>
+            <h3 class="text-xl font-semibold mb-4">Why Our Sales Flow Works</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">
+                The sales flow ensures a seamless customer experience, from product selection to onboarding. With secure payments via Stripe and personalized onboarding emails, we deliver convenience and trust. The automated ID allocation provides smooth access and ensures each customer has their unique identity within the system.
+            </p>
+        </section>
+
+        <!-- Attachment Section -->
+        <section class="mt-8">
+            <h3 class="text-xl font-semibold mb-4">Download the Full Sales Flow Guide</h3>
+            <div class="flex items-center space-x-3 bg-white p-4 rounded-lg shadow-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7 7-7 7M13 8l7 7-7 7" />
+                </svg>
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="text-blue-600 hover:underline text-lg font-medium">Download PDF</a>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">Click the link to download the full guide in PDF format for detailed information on our sales flow process.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Knowledge Base. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
